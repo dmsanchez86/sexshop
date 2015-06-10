@@ -1,0 +1,248 @@
+/*
+*
+* Theme Name: Tienda SexShop
+* Theme URL: http://zopp.co
+* Author: Daniel M. Sánchez
+* Author URL: http://github.com/dmsanchez86
+* Description: Theme for stores erotics
+* version: 1.0
+*
+*/
+*,
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+body {
+  background-image: url('/wp-content/themes/sexshop/img/fondo_body.png');
+}
+.header {
+  background-image: url('/wp-content/themes/sexshop/img/fondo_header.png');
+  background-size: cover;
+  background-position: center;
+}
+.header #search {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: .5rem 1rem;
+  line-height: 1;
+  color: white;
+  border-radius: 8px;
+  height: auto;
+  border-color: transparent;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.header input[type=text]:focus:not([readonly]) {
+  border-color: transparent;
+  box-shadow: none;
+}
+.header .input-field label {
+  color: white;
+  left: 1.75rem;
+  top: .3rem;
+}
+.header input[type=text]:focus:not([readonly]) + label {
+  color: white;
+}
+.header .input-field label.active {
+  transform: translatey(-150%);
+}
+.header .carshop {
+  position: relative;
+  text-align: center;
+}
+.header .carshop .car {
+  margin: 30% auto 0;
+  display: inline-block;
+  transition: .5s;
+  cursor: pointer;
+  opacity: .6;
+}
+.header .carshop .car:hover {
+  opacity: 1;
+}
+.navigator .container {
+  background-color: white;
+  padding-top: 1.5rem;
+}
+.navigator ul {
+  background-color: #AC001A;
+  display: flex;
+}
+.navigator ul li {
+  flex: 1;
+}
+.navigator ul li a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: all .5s ease;
+  padding: .5rem 1.5rem;
+  border: thin solid transparent;
+  display: block;
+  text-transform: uppercase;
+}
+.navigator ul li a:hover,
+.navigator ul li a:focus,
+.navigator ul li a:active {
+  color: #AC001A;
+  background-color: white;
+  text-shadow: 0 0 4px white;
+  border-color: #ac001a;
+}
+.slider_products .container {
+  background-color: white;
+  padding-top: 2rem;
+}
+.slider_products .container .row {
+  margin: 0;
+}
+.slider_products .eslider__item img {
+  display: block;
+  margin: 0 auto;
+  min-width: 100%;
+}
+.slider_products .owl-pagination {
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+}
+.slider_products .owl-theme .owl-controls {
+  margin: 0;
+}
+.slider_products .owl-theme .owl-controls .owl-page span {
+  background: white;
+}
+.categories {
+  box-sizing: border-box;
+  border-top: 5px solid #ac001a;
+  border-bottom: 5px solid #ac001a;
+  padding: 1rem 1.5rem;
+  background-color: rgba(170, 170, 170, 0.23);
+}
+.categories ul li a {
+  color: #ac001a;
+  padding: 1rem 1.5rem;
+  border-bottom: solid #ac001a thin;
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.45rem;
+  transition: .4s ease all;
+}
+.categories ul li a:hover,
+.categories ul li a:active,
+.categories ul li a:focus {
+  border-color: #6F1F1F;
+  text-shadow: 0 0 3px #6F1F1F;
+}
+.categories ul li:last-child a {
+  border: none;
+}
+.content .container {
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.content .articulo {
+  border: thin solid transparent;
+  padding: 1em;
+  box-shadow: 0 0 2px #aaa;
+  min-height: 360px;
+}
+.content .articulo:hover {
+  border-color: #ccc;
+}
+.content .articulo:hover h3 {
+  text-decoration: underline;
+}
+.content .articulo .articulo_imagen {
+  border: thin solid #ccc;
+  padding: .25rem;
+  min-height: 200px;
+  position: relative;
+}
+.content .articulo .articulo_imagen img {
+  display: block;
+  margin: 0 auto;
+}
+.content .articulo .title_product h3,
+.content .articulo .title_product h4 {
+  line-height: 1.3;
+  margin: .25rem 0;
+  font-size: 1.5rem;
+  color: #323232;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content .articulo .title_product h3 a {
+  color: #323232;
+}
+.content .articulo .title_product .price {
+  color: red;
+  font-size: 1.2rem;
+}
+.content .articulo .title_product .description {
+  font-size: 14px;
+  color: #323232;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.content .articulo .title_product .btn_buy {
+  background-color: #ac001a;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: .15rem .5rem;
+  line-height: 1.3;
+  margin-top: 1rem;
+}
+.footer {
+  background-image: radial-gradient(#323232, #000000);
+  padding: 1rem 0 2rem;
+}
+.footer .container .row {
+  margin: 0;
+}
+.footer .dudes,
+.footer .politics,
+.footer .pay_methods {
+  padding: .5rem 1.5rem;
+}
+.footer .dudes h1,
+.footer .politics h1,
+.footer .pay_methods h1 {
+  margin: .3rem 0;
+  font-size: 2rem;
+}
+.footer .dudes p,
+.footer .politics p,
+.footer .pay_methods p {
+  text-align: justify;
+  font-size: 14px;
+}
+.footer .dudes h1,
+.footer .politics h1,
+.footer .pay_methods h1,
+.footer .dudes p,
+.footer .politics p,
+.footer .pay_methods p {
+  color: white;
+}
+.footer .dudes img,
+.footer .politics img,
+.footer .pay_methods img {
+  margin-top: 2rem;
+}
+.waves-effect.waves-color_r .waves-ripple {
+  background-color: #Ac001a;
+}
+.waves-effect.waves-color_w .waves-ripple {
+  background-color: rgba(243, 27, 60, 0.25);
+}

@@ -1,0 +1,128 @@
+/*
+*
+* Theme Name: Tienda SexShop
+* Theme URL: http://zopp.co
+* Author: Daniel M. Sánchez
+* Author URL: http://github.com/dmsanchez86
+* Description: Theme for stores erotics
+* version: 1.0
+*
+*/
+
+// Variables
+@ruta_imagenes: '/wp-content/themes/sexshop/img/';
+@fondo_header: url('@{ruta_imagenes}fondo_header.png');
+@fondo_body: url('@{ruta_imagenes}fondo_body.png');
+
+// Métodos
+.fondo_header(){
+    background-image: @fondo_header;
+    background-size: cover;
+    background-position: center;
+}
+.fondo_body(){
+    background-image: @fondo_body;
+}
+
+// Reseteo
+*,html{border: 0;margin: 0;padding: 0;}
+
+img{display: block; margin: 0 auto; }
+
+// body de la página
+body{.fondo_body();}
+
+// Header
+.header{ .fondo_header();
+    #search{background-color: rgba(255,255,255,.1); padding: .5rem 1rem;line-height:1; color: white; border-radius: 8px; height: auto; border-color: transparent;box-shadow: none;box-sizing: border-box;}
+    input[type=text]:focus:not([readonly]){border-color: transparent;box-shadow: none}
+    .input-field label{color: white; left: 1.75rem; top: .3rem;}
+    input[type=text]:focus:not([readonly])+label{color: white;}
+    .input-field label.active{transform: translatey(-150%);}
+    .carshop{position: relative; text-align: center;
+        .car{margin: 30% auto 0; display: inline-block;transition:.5s; cursor: pointer; opacity: .6;
+            &:hover{opacity: 1;}
+        }
+    }
+}
+
+// Menu
+.navigator{ 
+    .container{background-color: white;padding-top: 1.5rem;}
+    ul{ background-color: #AC001A; display: flex;
+        li{flex: 1;
+            a{color: white; font-size: 1.5rem; font-weight: 300; transition: all .5s ease;padding:.5rem 1.5rem; border: thin solid transparent; display: block; text-transform: uppercase; 
+                &:hover,&:focus,&:active{ color: #AC001A; background-color: white;text-shadow: 0 0 4px white; border-color: #ac001a;}
+            }
+        }
+    }
+}
+
+// Slider
+.slider_products{ 
+    .container{ background-color: white;padding-top: 2rem;
+        .row{margin: 0;}
+    }
+    .eslider__item{
+        img{display: block; margin: 0 auto; min-width: 100%;}
+    }
+    .owl-pagination{position: absolute;right: 2%; bottom: 3%;}
+    .owl-theme .owl-controls{margin: 0;}
+    .owl-theme .owl-controls .owl-page span{background: white;}
+}
+
+// Categorias
+.categories{ box-sizing: border-box; border-top: 5px solid #ac001a;border-bottom: 5px solid #ac001a; padding: 1rem 1.5rem;background-color: rgba(170, 170, 170, 0.23);
+    ul{
+        li{
+            a{color:#ac001a; padding: 1rem 1.5rem; border-bottom: solid #ac001a thin; display: block; text-align: center;font-weight: 400; text-transform: uppercase;font-size: 1.45rem;transition: .4s ease all;
+                &:hover,&:active,&:focus{border-color: #6F1F1F; text-shadow: 0 0 3px #6F1F1F;}
+            }
+            &:last-child{
+                a{border: none;}
+            }
+        }
+    }
+}
+
+// contenedor de productos
+.content{
+    .container{background-color: white;padding-top: 2rem;padding-bottom: 2rem;}
+    .articulo{border: thin solid transparent; padding: 1em; box-shadow: 0 0 2px #aaa; min-height: 360px;
+        &:hover{border-color: #ccc;
+            h3{text-decoration: underline;}
+        }
+        .articulo_imagen{border: thin solid #ccc;padding:.25rem; min-height: 200px; position: relative;
+            img{display: block; margin: 0 auto; }
+        }
+        .title_product{
+            h3,h4{line-height:1.3; margin: .25rem 0; font-size: 1.5rem;color: #323232; text-transform: uppercase; text-align: center;}
+            h3{
+                a{color: #323232;}
+            }
+            .price{color: red; font-size: 1.2rem;}
+            .description{font-size: 14px; color: #323232; word-wrap: break-word; text-align: justify;}
+            .btn_buy{background-color: #ac001a; color: white; display: block; text-align: center; padding: .15rem .5rem; line-height: 1.3; margin-top: 1rem;}
+        }
+    }
+}
+
+// Footer
+.footer{ background-image: radial-gradient(#323232,black); padding: 1rem 0 2rem;
+    .container{
+        .row{margin: 0;}
+    }
+    .dudes,.politics,.pay_methods{ padding: .5rem 1.5rem;
+        h1{margin: .3rem 0; font-size: 2rem;}
+        p{text-align: justify; font-size: 14px;}
+        h1,p{color: white;}
+        img{margin-top: 2rem;}
+    }
+}
+
+.waves-effect.waves-color_r .waves-ripple{
+  background-color: #Ac001a;
+}
+.waves-effect.waves-color_w .waves-ripple{
+  background-color: rgba(243, 27, 60, 0.25);
+}
